@@ -1,5 +1,6 @@
 var box = document.querySelector('.box');
 var turnButton  = document.querySelector('.turn-button');
+var sizeButton  = document.querySelector('.size-button');
 
 
 turnButton.addEventListener('click', function() {
@@ -25,3 +26,7 @@ turnButton.addEventListener('click', function() {
     }
 
 });
+
+sizeButton.addEventListener('click', function () {
+    box.classList.toggle('increase-box-size');
+})
